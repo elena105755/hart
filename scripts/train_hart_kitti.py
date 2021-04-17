@@ -121,7 +121,7 @@ model = HART(x, y[0], p[0], batch_size, crop_size, builder,
 # In[4]:
 
 schedule.train_store = train_store
-print 'Num Test Batches: {}'.format(test_store.n_batches_per_epoch)
+print('Num Test Batches: {}'.format(test_store.n_batches_per_epoch))
 
 # In[5]:
 
@@ -224,7 +224,7 @@ for train_itr in schedule:
         writer.add_summary(summary, train_itr)
 
         schedule.report_score(train_loss['loss/iou'])
-        print sess.run(model.cell.att_bias)
+        print(sess.run(model.cell.att_bias))
 
     sess.run(train_step)
 

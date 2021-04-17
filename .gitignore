@@ -2,3 +2,4 @@
 *.pyc
 checkpoints/bvlc_alexnet.npy
 .ipynb_checkpoints
+.DS_Store
